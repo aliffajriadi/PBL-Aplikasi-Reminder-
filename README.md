@@ -5,11 +5,4 @@ Lifetivity memiliki fitur seperti reminder lainnya seperti pengingat harian untu
 
 #Tambahkan dahulu database nya dari .sql
 
-Ketua Kelompok : 
-3312401092 -  Bastian Herinko L.
-
-Anggota Kelompok:
 3312401103 - Alif Fajriadi
-3312401110 - Adrian Rizqullah
-3312401113 - Refandy Eka K. 
-3312401107 - Putri Tiara J. 
