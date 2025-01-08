@@ -1,26 +1,29 @@
 <?php 
     include "../koneksi.php";
     include "../session.php";
-    
-    // mengambil id tantangan dari variable post
+
+    // mengambil id catatan dari variabel post
     $id_catatan = $_POST['id_catatan'];
 
-    // mengeksekusi query
-    $execute = mysqli_query($conn, "DELETE FROM catatan WHERE id_catatan = '$id_catatan'");
+    try {
+        // mengeksekusi query untuk menghapus catatan
+        $execute = mysqli_query($conn, "DELETE FROM catatan WHERE id_catatan = '$id_catatan'");
 
-    // setelah query dijalankan
-    // jika berhail maka akan muncul alert berhasil dihapus
-    // jika gagal maka akan muncul alert gagal dihapus
-    if($execute) {
+        // jika query gagal dieksekusi
+        if (!$execute) {
+            throw new Exception('Gagal menghapus catatan.');
+        }
+
+        // jika berhasil
         echo "<script>
-                    alert('Catatan Berhasil Dihapus');
-                    window.location.href = '../../catatan';
+                alert('Catatan Berhasil Dihapus');
+                window.location.href = '../../catatan';
             </script>";
-    }else{
+    } catch (Exception $e) {
+        // menangani exception jika terjadi kesalahan
         echo "<script>
-                    alert('Catatan Gagal Dihapus');
-                    window.location.href = '../../catatan';
+                alert('Catatan Gagal Dihapus: " . $e->getMessage() . "');
+                window.location.href = '../../catatan';
             </script>";
     }
-    // setelah itu akan dipindahkan ke halaman catatan
 ?>
