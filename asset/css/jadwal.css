@@ -1,0 +1,11 @@
+.tengah {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.min-400 {
+    min-width: 400px;
+}
