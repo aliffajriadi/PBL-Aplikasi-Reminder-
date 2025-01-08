@@ -3,6 +3,8 @@ Lifetivity adalah aplikasi "Self-Reminder" yang dibuat oleh kelompok PBL kami un
 
 Lifetivity memiliki fitur seperti reminder lainnya seperti pengingat harian untuk jadwal harian ataupun pengingat tugas, lalu ada fitur untuk menyimpan catatan. Aplikasi ini memiliki sistem Challange yang membantu pengguna untuk memantau setiap progress aktivitas hariannya, serta fitur Challange yang dapat memberi tantangan untuk memperbaiki kebiasaan dan mengelola waktu dengan baik yang pada akhirnya akan meningkatkan kesejahteraan mental.
 
+#Tambahkan dahulu database nya dari .sql
+
 Ketua Kelompok : 
 3312401092 -  Bastian Herinko L.
 
